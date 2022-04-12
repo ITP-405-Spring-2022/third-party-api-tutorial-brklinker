@@ -18,10 +18,16 @@ Things that can be queryed:
 - Contests
 - Berries
 
-
-
-
+Below is code that would recieve JSON information for a given pokemon name and then display it.
 ~~~
+Route::get(/pokemon/{$name}, function($name) {
 
+    $response = Cache::remember("pokemon-name-$name", 60, function () use ($name) {
+        return Http::get("https://pokeapi.co/api/v2/pokemon/$name.json")->object();
+    });
 
+     return view('api.pokemon', [
+        'response' => $response,
+    ]);
+}
 ~~~
