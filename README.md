@@ -35,5 +35,5 @@ Route::get(/pokemon/{$name}, function($name) {
 Below is what the the JSON that would be recieved when querying about the ditto pokemon.
 
 
-![Ditto Pokemon Query!(pokemon-json.png)]
+![Ditto Pokemon Query!(https://github.com/ITP-405-Spring-2022/third-party-api-tutorial-brklinker/blob/main/pokemon-json.PNG)]
 
