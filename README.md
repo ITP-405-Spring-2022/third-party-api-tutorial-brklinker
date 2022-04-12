@@ -1,4 +1,4 @@
-# PokeMon API
+# Pokemon API
 
 Link to the [PokeAPI Website](https://pokeapi.co/)  
 Link to [documentation](https://pokeapi.co/docs/v2)
